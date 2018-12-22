@@ -7,12 +7,13 @@ import {
   PriorityQueue,
   smallest,
   swap
-} from '../src/PriorityQueue'
+} from '../src/priorityQueue'
 
 describe('PriorityQueue', () => {
   const Q = (...t: number[]) => {
-    const q = new PriorityQueue<number>()
+    const q = new PriorityQueue()
     t.forEach(_ => q.push(_, _))
+
     return q
   }
   const cmp = (a: number, b: number) => a - b
@@ -26,6 +27,7 @@ describe('PriorityQueue', () => {
         result.push(r)
       }
     } while (q.peek() !== undefined)
+
     return result
   }
 
@@ -56,7 +58,7 @@ describe('PriorityQueue', () => {
       swap(actual, 0, 1)
       const expected = [2, 1]
 
-      // assert
+      // Assert
       assert.deepStrictEqual(actual, expected)
     })
   })
@@ -141,9 +143,9 @@ describe('PriorityQueue', () => {
     })
 
     it('should pull smallest value', () => {
-      assert.equal(Q(1).pull(), 1)
-      assert.equal(Q(2, 1).pull(), 1)
-      assert.equal(Q(3, 2, 1).pull(), 1)
+      assert.strictEqual(Q(1).pull(), 1)
+      assert.strictEqual(Q(2, 1).pull(), 1)
+      assert.strictEqual(Q(3, 2, 1).pull(), 1)
     })
   })
   describe('smallest()', () => {
@@ -157,12 +159,12 @@ describe('PriorityQueue', () => {
   describe('isEmpty()', () => {
     it('should return true if the queue is empty', () => {
       const q = Q()
-      assert.equal(q.isEmpty(), true)
+      assert.strictEqual(q.isEmpty(), true)
     })
 
     it('should return false if the queue is NOT empty', () => {
       const q = Q(1)
-      assert.equal(q.isEmpty(), false)
+      assert.strictEqual(q.isEmpty(), false)
     })
   })
 })
