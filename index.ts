@@ -1,1 +1,1 @@
-export {PriorityQueue} from './src/PriorityQueue'
+export {PriorityQueue} from './src/priorityQueue'

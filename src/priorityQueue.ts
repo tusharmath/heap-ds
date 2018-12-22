@@ -14,6 +14,24 @@ type Queue<T> = Array<IQueueItem<T>>
 type Comparer<T> = (a: T, b: T) => number
 
 /**
+ * Returns the parent index in a heap
+ */
+export const parent = (i: number): number =>
+  i === 0 ? 0 : Math.floor((i - 1) / 2)
+
+export const left = (i: number): number => i * 2 + 1
+
+export const right = (i: number): number => i * 2 + 2
+
+/**
+ * Swaps two elements in an array
+ */
+export const swap = <T>(q: T[], a: number, b: number): void => {
+  const [aItem, bItem] = [q[a], q[b]]
+  q[a] = bItem
+  q[b] = aItem
+}
+/**
  * Creates a min heap
  */
 export const minHeapifyUp = <T>(q: T[], i: number, cmp: Comparer<T>): void => {
@@ -54,25 +72,6 @@ export const minHeapifyDown = <T>(q: T[], i: number, cmp: Comparer<T>): T[] => {
 
   return q
 }
-
-export const left = (i: number): number => i * 2 + 1
-
-export const right = (i: number): number => i * 2 + 2
-
-/**
- * Swaps two elements in an array
- */
-export const swap = <T>(q: T[], a: number, b: number): void => {
-  const [aItem, bItem] = [q[a], q[b]]
-  q[a] = bItem
-  q[b] = aItem
-}
-
-/**
- * Returns the parent index in a heap
- */
-export const parent = (i: number): number =>
-  i === 0 ? 0 : Math.floor((i - 1) / 2)
 
 export const priorities = <T>(q: PriorityQueue<T>): number[] =>
   q.queue.map(_ => _.priority)
