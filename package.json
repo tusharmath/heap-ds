@@ -1,5 +1,5 @@
 {
-  "name": "@tusharmathur/priority-queue",
+  "name": "priority-kyu",
   "version": "0.0.0-development",
   "description": "A simple typescript based implementation of priority queue",
   "main": "index.js",
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tusharmath/priority-queue.git"
+    "url": "https://github.com/tusharmath/priority-kyu.git"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
