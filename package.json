@@ -1,5 +1,5 @@
 {
-  "name": "@tusharmath/priority-queue",
+  "name": "@tusharmathur/priority-queue",
   "version": "0.0.0-development",
   "description": "A simple typescript based implementation of priority queue",
   "main": "index.js",
