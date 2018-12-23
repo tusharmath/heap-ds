@@ -1,9 +1,9 @@
 {
   "generator-kips": {
     "promptValues": {
-      "projectName": "priority-kyu",
-      "projectDescription": "A simple typescript based implementation of priority queue",
-      "keywords": "queue heap priority typescript"
+      "projectName": "heap-ds",
+      "projectDescription": "A simple typescript based implementation of heap data structure",
+      "keywords": "heap priority queue data structure typescript"
     }
   }
 }

@@ -1,1 +1,1 @@
-export {PriorityQueue} from './src/priorityQueue'
+export {Heap} from './src/heap'

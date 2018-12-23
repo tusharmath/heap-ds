@@ -1,12 +1,12 @@
-# priority-kyu
-[![Build Status](https://travis-ci.com/tusharmath/priority-kyu.svg?branch=master)](https://travis-ci.com/tusharmath/priority-kyu)
-![npm](https://img.shields.io/npm/v/priority-kyu.svg)
-![npm (scoped)](https://img.shields.io/npm/v/priority-kyu.svg)
+# heap-ds
+[![Build Status](https://travis-ci.com/tusharmath/heap-ds.svg?branch=master)](https://travis-ci.com/tusharmath/heap-ds)
+![npm](https://img.shields.io/npm/v/heap-ds.svg)
+![npm (scoped)](https://img.shields.io/npm/v/heap-ds.svg)
 
-A simple typescript based implementation of priority queue
+A simple typescript based implementation of heap data structure
 
 # Installation
 
 ```bash
-npm i priority-kyu
+npm i heap-ds
 ```

@@ -1,10 +1,10 @@
 {
-  "name": "priority-kyu",
+  "name": "heap-ds",
   "version": "0.0.0-development",
-  "description": "A simple typescript based implementation of priority queue",
+  "description": "A simple typescript based implementation of heap data structure",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require=ts-node/register test/*.ts",
+    "test": "mocha --require=ts-node/register --watch-extensions ts test/*.ts",
     "prepublishOnly": "tsc -d",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
@@ -19,14 +19,16 @@
     }
   },
   "keywords": [
-    "queue",
     "heap",
     "priority",
+    "queue",
+    "data",
+    "structure",
     "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tusharmath/priority-kyu.git"
+    "url": "https://github.com/tusharmath/heap-ds.git"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
